@@ -1,0 +1,45 @@
+.Maindiv{
+    background: #00D084;
+background: linear-gradient(90deg,rgba(0, 208, 132, 1) 0%, rgba(123, 220, 181, 1) 100%);
+}
+
+
+.morphing-button {
+  position: relative;
+  background: linear-gradient(135deg, #ff3f3f, #ff4f4f);
+  border: none;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.morphing-button:hover {
+  transform: translateY(-2px);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(255, 253, 249, 0.3);
+}
+
+.morphing-button:hover i {
+  transform: translateX(4px);
+}
+
+.morphing-button i {
+  transition: transform 0.3s ease;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .morphing-button {
+    background: linear-gradient(135deg, #ff3f3f, #ff4f4f);
+  }
+  
+  .morphing-button:hover {
+    box-shadow: 0 5px 15px rgba(217, 217, 217, 0.3);
+  }
+}
+
+
