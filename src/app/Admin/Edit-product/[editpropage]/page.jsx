@@ -147,7 +147,7 @@ function Editproduct() {
   const isMinReached = images.length === MIN_IMAGES;
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white pt-25 md:pt-30 text-black min-h-screen'>
       <ToastContainer />
       {loading && (
         <div className='fixed inset-0 bg-black/10 bg-opacity-20 z-50 flex items-center justify-center'>
@@ -155,7 +155,7 @@ function Editproduct() {
         </div>
       )}
       <Editnav />
-      <div className='mt-25 md:mt-28 w-full h-full flex justify-center'>
+      <div className='w-full h-full flex justify-center'>
         <div className='w-6xl max-md:m-2 p-4 md:p-6 shadow-[0px_0px_48px_5px_rgba(0,_0,_0,_0.1)] rounded-lg bg-white'>
           <form onSubmit={Editedform}>
             <h1 className='text-black/80 font-honeybabe text-[20px] '>Edit-product Informations</h1>

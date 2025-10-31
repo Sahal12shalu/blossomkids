@@ -33,7 +33,7 @@ function Footer() {
                         <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Privacy'>Privacy policy</Link>
                     </div>
 
-                    <div>
+                    <div className='flex flex-col'>
                         <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Terms'>Terms&Condition</Link>
                         <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Shippingpolicy'>Shipping policy</Link>
                     </div>

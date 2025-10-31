@@ -24,7 +24,7 @@ function Trackpage() {
     }
     
   return (
-    <div>
+    <div className='bg-white min-h-screen'>
       { popUp ? '' :
         <Navbar />
       }
@@ -56,9 +56,9 @@ function Trackpage() {
               {
       data.length > 0 ?
 
-        <div className='mt-23 w-full flex flex-col justify-center items-center'>
+        <div className='mt-22 w-full flex flex-col justify-center items-center'>
 
-          <h1 className='font-honeybabe text-center w-full text-[25px] tracking-wider underline underline-offset-2'>History Page</h1>
+          <h1 className='font-honeybabe text-center w-full text-[25px] text-black tracking-wider underline underline-offset-2'>History Page</h1>
           <div className='max-md:hidden w-[80%] flex max-md:flex-col border-b-1 border-black/20 p-5'>
             <div className='md:w-[5%] w-full max-md:hidden flex justify-center items-center'>
               <p className='text-[16px] text-black font-sans font-semibold'>number</p>

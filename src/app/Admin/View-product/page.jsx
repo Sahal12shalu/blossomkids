@@ -58,7 +58,7 @@ function Viewproduct() {
   }, [])
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white min-h-screen text-black'>
     <ToastContainer />
     {loading && (
         <div className='fixed inset-0 bg-black/10 bg-opacity-20 z-100 flex items-center justify-center'>

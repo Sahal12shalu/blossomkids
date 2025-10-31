@@ -160,7 +160,7 @@ function Cartpage() {
       {
         data.length > 0 ?
 
-          <div className='mt-23 flex max-md:flex-col w-full px-4 md:px-15 '>
+          <div className='mt-22 flex max-md:flex-col w-full px-4 md:px-15 '>
             <div className='w-full md:w-[50%] flex flex-col'>
               <div className='w-full'>
                 <p className='text-[22px] text-black font-honeybabe font-extralight md: pb-3'>Your Cart ( {cartValues} items )</p>
@@ -177,16 +177,16 @@ function Cartpage() {
                       <p className='md:text-[14px] text-[12px] text-black font-sans font-semibold'>{value.category}</p>
                     </div>
                     <div className='w-[23%] md:w-[25%] flex justify-center items-center gap-3'>
-                      <button onClick={() => updateQuantity(value.id, "inc")} className='bg-white transition-transform active:scale-95 duration-100 rounded-full h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>+</button>
+                      <button onClick={() => updateQuantity(value.id, "inc")} className='bg-white text-black transition-transform active:scale-95 duration-100 rounded-full h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>+</button>
                       <p className='text-black text-[16px]'>{value.quantity}</p>
                       {
                         value.quantity === 1 ?
-                          <button className='bg-gray-200 rounded-full transition-transform active:scale-95 duration-100 h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>−</button>
+                          <button className='bg-gray-200 text-black rounded-full transition-transform active:scale-95 duration-100 h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>−</button>
                           :
-                          <button onClick={() => updateQuantity(value.id, "dec")} className='bg-white rounded-full transition-transform active:scale-95 duration-100 h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>−</button>
+                          <button onClick={() => updateQuantity(value.id, "dec")} className='bg-white text-black rounded-full transition-transform active:scale-95 duration-100 h-7 w-7 md:h-8 md:w-8 border-1 border-black/30 shadow-[0px_-1px_31px_1px_rgba(0,_0,_0,_0.1)]'>−</button>
                       } </div>
                     <div className='w-[23%] md:w-[21%] flex items-center max-md:gap-5 justify-end md:justify-around'>
-                      <h1 className='text-[17px] font-sans font-semibold'>{value.lastprize}</h1>
+                      <h1 className='text-[17px] font-sans font-semibold text-black'>{value.lastprize}</h1>
                       <MdDelete onClick={() => Deleteproduct(value._id)} className='transition-transform active:scale-95 duration-100 text-red-500 w-6 h-6' />
                     </div>
                   </div>
@@ -249,13 +249,13 @@ function Cartpage() {
                 <div className='flex flex-col mt-4 gap-1'>
                   <label className='pl-1 font-sans text-black font-semibold text-[16px]'>Full Name</label>
                   <input type='text' name='fullname' onChange={handleChange} value={formData.fullname}
-                    placeholder='eg: john' className='rounded-lg border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
+                    placeholder='eg: john' className='rounded-lg text-black border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
                 </div>
 
                 <div className='flex flex-col mt-4 gap-1'>
                   <label className='pl-1 font-sans text-black font-semibold text-[16px]'>Email</label>
                   <input type='Email' name='email' onChange={handleChange} value={formData.email}
-                    placeholder='Enter email here' className='rounded-lg border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
+                    placeholder='Enter email here' className='rounded-lg text-black border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
                   <p className='pl-2 font-sans font-semibold text-[13px] text-red-400'>NB:"Keep this email — you’ll need it to track your order."</p>
                 </div>
 
@@ -263,19 +263,19 @@ function Cartpage() {
                   <div className='w-[50%] flex flex-col'>
                     <label className='pl-1 font-sans text-black font-semibold text-[16px]'>City</label>
                     <input type='text' name='city' onChange={handleChange} value={formData.city}
-                      placeholder='Enter city name' className='rounded-lg border-1 border-black/30 w-full h-9 pl-3' required />
+                      placeholder='Enter city name' className='rounded-lg text-black border-1 border-black/30 w-full h-9 pl-3' required />
                   </div>
                   <div className='w-[50%] flex flex-col'>
                     <label className='pl-1 font-sans text-black font-semibold text-[16px]'>Postal Code</label>
                     <input type='number' name='postalcode' onChange={handleChange} value={formData.postalcode}
-                      placeholder='671121' className='rounded-lg border-1 border-black/30 w-full h-9 pl-3' />
+                      placeholder='671121' className='rounded-lg border-1 text-black border-black/30 w-full h-9 pl-3' />
                   </div>
                 </div>
 
                 <div className='flex flex-col mt-4 gap-1'>
                   <label className='pl-1 font-sans text-black font-semibold text-[16px]'>Adress</label>
                   <textarea type='Email' name='address' onChange={handleChange} value={formData.address}
-                    placeholder='e.g., MG Road, Kochi, Kerala' className='rounded-lg py-2 border-1 border-black/30 flex justify-center w-[90%] md:w-[70%] h-18 pl-3' required />
+                    placeholder='e.g., MG Road, Kochi, Kerala' className='rounded-lg text-black py-2 border-1 border-black/30 flex justify-center w-[90%] md:w-[70%] h-18 pl-3' required />
                 </div>
 
                 <div className='mt-4' >
@@ -283,11 +283,11 @@ function Cartpage() {
                   <div className='border-1 border-black/40 rounded-md w-[90%] md:w-[70%]'>
                     <div className='w-full border-b-1 border-black/40 py-3 px-3'>
                       <input type="radio" id="COD" name="payment" value="COD" onChange={handleChange} checked={formData.payment === 'COD'} required />
-                      <label className='pl-2' htmlFor="cod">Cash on Delivery</label><br />
+                      <label className='pl-2 text-black' htmlFor="cod">Cash on Delivery</label><br />
                     </div>
                     <div className='w-full p-3'>
                       <input type="radio" id="OP" name="payment" value="OP" onChange={handleChange} checked={formData.payment === 'OP'} required />
-                      <label className='pl-2' htmlFor="online-payment">Online Payment</label><br />
+                      <label className='pl-2 text-black' htmlFor="online-payment">Online Payment</label><br />
                     </div>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ function Cartpage() {
                 <div className='flex flex-col mt-4 gap-1'>
                   <label className='pl-1 font-sans text-black font-semibold text-[16px]'>Phone Number</label>
                   <input type='tel' name='phonenumber' onChange={handleChange} value={formData.phonenumber}
-                    placeholder='+91 1234567890' className='rounded-lg border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
+                    placeholder='+91 1234567890' className='rounded-lg text-black border-1 border-black/30 w-[90%] md:w-[70%] h-9 pl-3' required />
                 </div>
 
                 {buttonspin ?

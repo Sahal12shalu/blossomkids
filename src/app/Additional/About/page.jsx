@@ -10,7 +10,7 @@ function About() {
       <div className="fixed max-md:top-2/5 top-2/5 lg:top-2/5 lg:left-0 w-30 md:w-62 h-25 md:h-52 bg-gradient-to-b from-[#ffc97387] to-green-200 rounded-full blur-2xl md:blur-3xl"></div>
       <div className="fixed top-2/5 lg:top-2/9 max-md:hidden lg:right-0 md:w-62 md:h-52 bg-gradient-to-b from-[#ffc9735e] to-green-200/70 rounded-full blur-2xl md:blur-3xl"></div>
 
-      <h1 className='mt-30 md:mt-35 text-center text-[28px] md:text-[32px] font-honeybabe text-black underline underline-offset-2 tracking-wide'>About Us</h1>
+      <h1 className='pt-30 md:pt-35 text-center text-[28px] md:text-[32px] font-honeybabe text-black underline underline-offset-2 tracking-wide'>About Us</h1>
       <div className='w-full flex max-md:flex-col justify-center items-start'>
         <div className='flex max-w-6xl max-md:flex-col justify-center items-center md:items-start pb-5'>
           <div className='md:w-[40%] p-2 flex flex-col justify-start items-center md:hidden'>

@@ -12,7 +12,7 @@ import Whatsapp from "./Pages/Whatsapp/page";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       <Homepage />
       <FocusCardsDemo />

@@ -54,7 +54,7 @@ function Products() {
   };
 
   return (
-    <div className='w-full flex flex-col justify-center items-center z-99 relative mb-10 bg-white' id='Product'>
+    <div className='w-full flex flex-col justify-center items-center z-99 relative mb-10 bg-white text-black' id='Product'>
       <h1 className='pb-8 font-semibold text-[18px] md:text-[26px] text-black font-mainfont tracking-widest'>Products</h1>
       <div className='max-w-6xl px-2 md:px-5 flex flex-wrap justify-center items-center gap-3 md:gap-10'>
         {

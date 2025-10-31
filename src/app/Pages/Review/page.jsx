@@ -21,7 +21,7 @@ function Review() {
           </div>
         </div>
         <Image src='/review/siddi.jpg' alt='customers' width={100} height={100} className='absolute w-25 h-25 rounded-full object-cover bottom-8 left-1/3 border-1 border-black/60' />
-        <h1 className='absolute bottom-1 left-2/7 font-semibold font-sans'>Aboobacker Siddik</h1>
+        <h1 className='absolute bottom-1 left-2/7 text-black font-semibold font-sans'>Aboobacker Siddik</h1>
         </div>
 
         <div className='w-[80%] md:w-[25%] pb-20 relative md:mt-10'>
@@ -38,7 +38,7 @@ function Review() {
           </div>
         </div>
         <Image src='/review/neha.jpg' alt='customers' width={100} height={100} className='absolute object-cover w-25 h-25 rounded-full bottom-8 left-1/3 border-1 border-black/60' />
-        <h1 className='absolute bottom-1 left-2/7 font-semibold font-sans'>Neha R (kochi)</h1>
+        <h1 className='absolute bottom-1 left-2/7 text-black font-semibold font-sans'>Neha R (kochi)</h1>
         </div>
 
         <div className='w-[80%] md:w-[25%] pb-20 relative'>
@@ -55,7 +55,7 @@ function Review() {
           </div>
         </div>
         <Image src='/review/rahul.jpeg' alt='customers' width={100} height={100} className='absolute w-25 object-fill h-25 rounded-full bottom-8 left-1/3 border-1 border-black/60' />
-        <h1 className='absolute bottom-1 left-2/7 font-semibold font-sans'>Rahul (kannur)</h1>
+        <h1 className='absolute bottom-1 left-2/7 text-black font-semibold font-sans'>Rahul (kannur)</h1>
         </div>
 
         

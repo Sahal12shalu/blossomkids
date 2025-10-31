@@ -4,7 +4,7 @@ import React from 'react'
 
 function Privacy() {
     return (
-        <div>
+        <div className='bg-white text-black'>
             <Navbar />
 
             <div className="fixed max-md:top-2/5 top-2/5 lg:top-2/5 lg:left-0 w-30 md:w-62 h-25 md:h-52 bg-gradient-to-b from-[#ffc97387] to-green-200 rounded-full blur-2xl md:blur-3xl"></div>

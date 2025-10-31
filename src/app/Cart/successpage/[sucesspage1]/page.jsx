@@ -10,7 +10,7 @@ function Successpage() {
   const guestId = params['sucesspage1']
 
   return (
-    <div>
+    <div className='bg-white'>
         <div className='w-full flex justify-center items-center h-screen flex-col'>
            <DotLottieReact
       src="https://lottie.host/fe08e81d-1238-4823-95bc-0fe82e507d4b/txDUGsB6Ct.lottie"

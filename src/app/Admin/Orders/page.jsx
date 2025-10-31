@@ -58,7 +58,7 @@ function Orders() {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center bg-white w-full'>
+        <div className='flex flex-col justify-start items-center min-h-screen text-black bg-white w-full'>
             <AdminNav />
             {
                 addresspopup ?
@@ -83,7 +83,7 @@ function Orders() {
 
             <div className='mt-23 max-w-5xl p-4 flex flex-col justify-center items-center'>
                 <h1 className='text-[26px] font-honeybabe text-black underline underline-offset-2 tracking-wide'>Orders</h1>
-                <div className='flex gap-4 md:gap-12 mt-2 border-b-1 border-black/40 pb-3'>
+                <div className='flex gap-4 max-md:flex-wrap md:gap-12 mt-2 border-b-1 border-black/40 pb-3'>
                     {
                         STATUS_MAP.map(s => (
                             <button onClick={() => { SetstatusFilter(s.key); fetchorder(s.key) }}

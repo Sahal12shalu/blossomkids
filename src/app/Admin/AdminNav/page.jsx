@@ -24,7 +24,7 @@ function AdminNav() {
         sidebar ? 
         <div className='fixed right-0 top-0 bg-black w-40 h-screen flex flex-col'>
           <div className='flex justify-end items-center pr-3 text-white w-full h-16'>
-            <TbXboxXFilled className='w-6 h-6' onClick={()=>Setsidebar(false)} />
+            <TbXboxXFilled className='w-6 h-6 text-white' onClick={()=>Setsidebar(false)} />
           </div>
           <div className='w-full h-10 text-white font-mono pl-3'>Home</div>
           {
@@ -61,7 +61,7 @@ function AdminNav() {
         <div className='h-full w-[20%] flex justify-center items-center gap-4'>
          </div>
         <div className='md:hidden h-full w-[15%] flex justify-center items-center'>
-          <HiOutlineMenu className='w-5 h-5' onClick={Menuclick} />
+          <HiOutlineMenu className='w-5 h-5 text-black' onClick={Menuclick} />
         </div>
     </div>
   )

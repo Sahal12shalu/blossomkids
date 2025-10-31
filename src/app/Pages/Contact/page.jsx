@@ -92,28 +92,28 @@ function Connectus() {
                     </div>
                 </div>
 
-                <div className='md:w-[50%] w-full max-md:mt-5 '>
+                <div className='md:w-[50%] w-full max-md:mt-5'>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='md:w-[70%] max-md:mx-5 md:ml-5 z-99 relative rounded-2xl shadow-[0px_4px_25px_1px_rgba(0,_0,_0,_0.1)] bg-white pl-9 md:pl-14 pr-5 max-md:pt-7 py-5'>
-                            <h1 className='text-[22px] font-extralight'>Send Us a <span className='font-semibold text-[#6e4b1f]'> message </span></h1>
+                            <h1 className='text-[22px] font-extralight text-black'>Send Us a <span className='font-semibold text-[#6e4b1f]'> message </span></h1>
                             <div className='flex flex-col pt-5'>
                                 <label className='text-black/70 text-[15px]'>Your Name</label>
-                                <input type='text' name="name" className='rounded-xl border-1 border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='Enter Your Name..' />
+                                <input type='text' name="name" className='rounded-xl border-1 text-black border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='Enter Your Name..' />
                             </div>
 
                             <div className='flex flex-col pt-7'>
                                 <label className='text-black/70 text-[15px]'>Email Address</label>
-                                <input type='email' name="email" className='rounded-xl border-1 border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='1234@gmail.com' />
+                                <input type='email' name="email" className='rounded-xl border-1 text-black border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='1234@gmail.com' />
                             </div>
 
                             <div className='flex flex-col pt-7'>
                                 <label className='text-black/70 text-[15px]'>Subject</label>
-                                <input type='text' name="subject" className='rounded-xl border-1 border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='Subject..' />
+                                <input type='text' name="subject" className='rounded-xl border-1 text-black border-[#593c19] w-[90%] md:w-[85%] h-10 pl-3' placeholder='Subject..' />
                             </div>
 
                             <div className='flex flex-col pt-7'>
                                 <label className='text-black/70 text-[15px]'>Message</label>
-                                <input type='text' name="message" className='rounded-xl border-1 border-[#593c19] w-[90%] md:w-[85%] h-15 pl-3' placeholder='Tell us About your inquiry..' />
+                                <input type='text' name="message" className='rounded-xl border-1 text-black border-[#593c19] w-[90%] md:w-[85%] h-15 pl-3' placeholder='Tell us About your inquiry..' />
                             </div>
 
                             {

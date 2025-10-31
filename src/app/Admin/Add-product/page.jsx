@@ -125,7 +125,7 @@ function Addproduct() {
   const isMinReached = image.length === MIN_IMAGES;
 
   return (
-    <div className='pt-8 bg-white'>
+    <div className='pt-8 bg-white min-h-screen pb-9'>
       <ToastContainer />
       {loading && (
         <div className='fixed inset-0 bg-black/10 bg-opacity-20 z-50 flex items-center justify-center'>
@@ -143,13 +143,15 @@ function Addproduct() {
               <div className='md:w-[50%] max-md:w-full '>
                 <div className='flex flex-col w-full pt-4'>
                   <label className='font-semibold font-sans text-black'>Product Name</label>
-                  <input onChange={handleChange} name='name' value={formData.name} type='text' className='pl-2 border-1 border-black/60 w-[95%] h-9 rounded-md' placeholder='Product name...' required />
+                  <input onChange={handleChange} name='name' value={formData.name} type='text' className='pl-2 border-1 text-black
+                   border-black/60 w-[95%] h-9 rounded-md' placeholder='Product name...' required />
                 </div>
 
                 <div className='flex w-full pt-4'>
                   <div className='w-[50%] flex flex-col'>
                     <label className='font-semibold font-sans text-black'>Category</label>
-                    <select name='category' onChange={handleChange} value={formData.category} className='border-1 border-black/60 w-[95%] h-9 rounded-md' required>
+                    <select name='category' onChange={handleChange} value={formData.category} className='border-1 text-black
+                     border-black/60 w-[95%] h-9 rounded-md' required>
                       <option value=''>-- select category --</option>
                       <option value='toys'>Toys</option>
                       <option value='dress'>Dress</option>
@@ -161,7 +163,8 @@ function Addproduct() {
 
                   <div className='w-[50%] flex flex-col'>
                     <label className='font-semibold font-sans text-black'>Stock</label>
-                    <select name='stock' onChange={handleChange} value={formData.stock} className='border-1 border-black/60 w-[90%] h-9 rounded-md' required>
+                    <select name='stock' onChange={handleChange} value={formData.stock} className='border-1 text-black
+                     border-black/60 w-[90%] h-9 rounded-md' required>
                       <option value=''>-- select option --</option>
                       <option value='stock'>Stock</option>
                       <option value='no-stock'>No Stock</option>
@@ -171,29 +174,33 @@ function Addproduct() {
 
                 <div className='flex flex-col w-full pt-4'>
                   <label className='font-semibold font-sans text-black'>Description</label>
-                  <textarea name='description' onChange={handleChange} value={formData.description} type='text' className='pl-2 border-1 border-black/60 w-[95%] h-20 rounded-md pt-1' placeholder='Write about the product ...' required />
+                  <textarea name='description' onChange={handleChange} value={formData.description} type='text' className='pl-2 text-black
+                   border-1 border-black/60 w-[95%] h-20 rounded-md pt-1' placeholder='Write about the product ...' required />
                 </div>
 
                 <div className='flex w-full pt-4'>
                   <div className='w-[33%]'>
                     <label className='font-semibold font-sans text-black'>First Rate</label>
-                    <input name='firstprize' onChange={handleChange} value={formData.firstprize} type='number' className='pl-2 border-1 border-black/60 w-[95%] h-9 rounded-md' />
+                    <input name='firstprize' onChange={handleChange} value={formData.firstprize} type='number' className='pl-2 text-black
+                     border-1 border-black/60 w-[95%] h-9 rounded-md' />
                   </div>
 
                   <div className='w-[33%]'>
                     <label className='font-semibold font-sans text-black'>Last Rate</label>
-                    <input name='lastprize' onChange={handleChange} value={formData.lastprize} type='number' className='pl-2 border-1 border-black/60 w-[95%] h-9 rounded-md' required />
+                    <input name='lastprize' onChange={handleChange} value={formData.lastprize} type='number' className='pl-2 text-black
+                     border-1 border-black/60 w-[95%] h-9 rounded-md' required />
                   </div>
 
                   <div className='w-[33%]'>
                     <label className='font-semibold font-sans text-black'>Discount (in%)</label>
-                    <input name='discount' onChange={handleChange} value={formData.discount} type='number' className='pl-2 border-1 border-black/60 w-[90%] h-9 rounded-md' placeholder='eg:20' />
+                    <input name='discount' onChange={handleChange} value={formData.discount} type='number' className='pl-2 border-1 text-black
+                     border-black/60 w-[90%] h-9 rounded-md' placeholder='eg:20' />
                   </div>
                 </div>
               </div>
 
               <div className='md:w-[50%] pt-8 md:pt-4 flex flex-col relative'>
-                <h1 className='text-[18px] font-semibold font-sans text-center'>Image Section</h1>
+                <h1 className='text-[18px] font-semibold font-sans text-center text-black'>Image Section</h1>
                 <div className='flex flex-wrap items-center justify-center mt-2 gap-5'>
                   {image.map((imgSrc, index) => (
                     <div key={index} className='w-22 h-22 border-1 border-black rounded-md relative'>
@@ -227,7 +234,7 @@ function Addproduct() {
                 </div>
 
                 <div className='flex flex-col justify-center pt-8 pb-4 md:pt-5 w-full border-b-1 border-black/30'>
-                  <h1 className='text-[18px] font-semibold font-sans text-center'>Additional information</h1>
+                  <h1 className='text-[18px] font-semibold font-sans text-center text-black'>Additional information</h1>
                   <label className='pl-5 font-semibold font-sans text-center text-black'>Make offer</label>
                   <div className='md:w-[70%] flex'>
                     <div className="checkbox-apple w-[30%] flex">

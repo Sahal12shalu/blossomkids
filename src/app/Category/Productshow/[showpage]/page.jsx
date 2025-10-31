@@ -71,7 +71,7 @@ function Productshow() {
   };
 
   return (
-    <div className='md:mb-9 mb-15 bg-white'>
+    <div className='md:mb-9 mb-15 min-h-screen pb-10 bg-white'>
 
       {selectedImage && (
         <div
@@ -92,10 +92,10 @@ function Productshow() {
       <div className="fixed top-2/5 lg:top-2/9 max-md:hidden lg:right-0 md:w-62 md:h-52 bg-gradient-to-b from-[#ffc9735e] to-green-200/70 rounded-full blur-2xl md:blur-3xl"></div>
 
       <Navbar />
-      <div className='mt-28 w-full flex max-md:flex-col md:flex md:px-[10%] '>
+      <div className='pt-28 md:pt-32 w-full flex max-md:flex-col md:flex'>
         {
           data.map((value, index) => (
-            <div key={index} className='md:flex'>
+            <div key={index} className='md:flex w-[100%] px-[10%]'>
 
               <div className='md:w-[50%] flex flex-col'>
                 <div className='w-full flex justify-center items-center'>
@@ -142,8 +142,7 @@ function Productshow() {
                     <button className='px-6 py-3 relative group bg-gray-500 rounded-md w-full md:w-[80%] text-white font-semibold font-sans mt-3'>
                       Out of Stock</button>}
 
-                <div className='mt-7 rounded-md w-full flex flex-col z-997 md:px-5 py-4 md:py-7 gap-3 md:gap-6 bg-white shadow-[0px_1px_24px_0px_rgba(0,_0,_0,_0.1)]'>
-
+                <div className='mt-7 rounded-md w-full flex flex-col z-997 px-5 py-4 md:py-7 gap-3 md:gap-6 bg-white shadow-[0px_1px_24px_0px_rgba(0,_0,_0,_0.1)]'>
                   <div className='w-full md:flex gap-3'>
                     <div className='w-full md:w-[50%] flex items-center gap-3 max-md:justify-center'>
                       <div className='w-9 h-9 bg-red-50 flex justify-center items-center rounded-full'>

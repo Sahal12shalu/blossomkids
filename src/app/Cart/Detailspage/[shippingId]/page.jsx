@@ -50,7 +50,7 @@ function Detailspage() {
   };
 
   return (
-    <div className='w-full flex flex-col justify-center items-center pb-6'>
+    <div className='w-full flex flex-col justify-center items-center bg-white pb-6'>
       <Navbar />
       {
         orderCancel ?

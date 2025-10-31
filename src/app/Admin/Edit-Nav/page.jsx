@@ -13,7 +13,7 @@ function Editnav() {
     Setsidebar(true)
   }
   return (
-    <div className='fixed w-full h-22 flex z-1000 backdrop-blur-md inset-0'>
+    <div className='fixed w-full h-22 flex bg-white z-1000 backdrop-blur-md inset-0'>
       {
         sidebar ? 
         <div className='fixed right-0 top-0 bg-black w-40 h-screen flex flex-col'>
