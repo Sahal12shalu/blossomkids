@@ -38,7 +38,7 @@ function Trackpage() {
                          text-[15px] text-white'>Search using the email<br />you’ll be able to see the orders with that email.</h1></div>
                       <form onSubmit={Submitemail}>
                       <div className='w-full h-[45%] flex flex-col justify-center items-center gap-4 pb-2 '>
-                        <input onChange={(e)=>Setemail(e.target.value)} value={email} type='email' className='bg-white rounded-md w-[60%] h-8 border-1 border-black/50 pl-2' required/>
+                        <input onChange={(e)=>Setemail(e.target.value)} value={email} type='email' className='bg-white text-black rounded-md w-[60%] h-8 border-1 border-black/50 pl-2' required/>
                         {buttonspin ?
                         <button className='transition-transform active:scale-95 flex justify-center items-center duration-100 w-[33%] 
                         h-8.5 bg-black/80 hover:bg-black rounded-md text-white font-semibold'>
@@ -116,7 +116,7 @@ function Trackpage() {
               value.items.map((value,index)=>(
             <div key={value._id} className='max-md:flex md:flex max-md:w-full md:w-full flex max-md:pt-2'>
             <div className='md:w-[38%] w-[60%] flex flex-col justify-center items-center max-md:items-start'>
-              <h1 className='text-[18px] text-black font-sans font-bold tracking-wider'>{value.name}</h1>
+              <h1 className='md:text-[18px] text-[16px] text-black font-sans font-bold tracking-wider'>{value.name}</h1>
             </div>
             <div className='md:w-[20%] max-md:hidden flex flex-col justify-center items-center '>
               <h1 className='text-[18px] text-black font-sans font-semibold'>{value.category}</h1>
@@ -135,7 +135,7 @@ function Trackpage() {
 
              <div className='md:w-[25%] flex max-md:justify-between max-md:pt-4'>
             <div className='md:w-[40%] flex justify-center items-center'>
-              <p className='text-[18px] max-md:text-[22px] text-black tracking-wide font-semibold'>
+              <p className='text-[19px] md:text-[18px] text-black tracking-wide font-sans font-semibold'>
                 <span className='md:hidden'>Total:</span> {value.grandtotal}</p>
             </div>
             <div className='md:w-[60%] underline underline-offset-2 decoration-amber-600 flex justify-center transition-transform active:scale-95 duration-100 items-center'>

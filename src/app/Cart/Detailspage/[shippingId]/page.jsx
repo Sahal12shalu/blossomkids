@@ -113,7 +113,7 @@ function Detailspage() {
                   <div className={`rounded-full ${value.status === 'packed' ? 'bg-teal-500' : value.status === 'success' ? 'bg-teal-500' : 'bg-black/60'}`}>
                     <MdOutlineDone className='text-white w-7 h-7 m-3 md:w-12 md:h-12 md:m-5' /></div>
                   <p className='text-[10px] md:text-[18px] font-sans text-black font-semibold flex gap-1 justify-center items-center'>
-                    <FaTruckMoving /> En Route</p>
+                    <FaTruckMoving />Route</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[13%]'>
