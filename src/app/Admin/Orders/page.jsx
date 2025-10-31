@@ -144,7 +144,7 @@ function Orders() {
                                             <p>{product.id}</p>
                                         </div>
                                         <div className='w-[22%] tracking-wide max-md:hidden flex justify-center items-center text-[10px] md:text-[15px]'>
-                                            <Image src={getNonFirstImage(product.images)} alt='product' width={100} height={100} className='w-17 h-12 rounded-lg border-1 border-black object-fill' />
+                                            <Image src={getNonFirstImage(product.images)} alt='product' width={100} height={100} className='w-17 h-17 rounded-lg border-1 border-black object-fill' />
                                         </div>
 
                                         <div className='w-[38%] tracking-wide md:w-[29%] flex flex-col justify-center items-center text-[10px] font-semibold font-sans md:text-[15px] break-all whitespace-normal px-2 text-center'>

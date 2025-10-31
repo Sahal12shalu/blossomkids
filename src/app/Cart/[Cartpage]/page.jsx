@@ -155,20 +155,20 @@ function Cartpage() {
   };
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white min-h-screen'>
       <Navbar />
       {
         data.length > 0 ?
 
-          <div className='mt-22 flex max-md:flex-col w-full px-4 md:px-15 '>
+          <div className='pt-22 flex max-md:flex-col w-full px-4 md:px-15 '>
             <div className='w-full md:w-[50%] flex flex-col'>
               <div className='w-full'>
-                <p className='text-[22px] text-black font-honeybabe font-extralight md: pb-3'>Your Cart ( {cartValues} items )</p>
+                <p className='text-[22px] text-black font-honeybabe font-extralight md:pb-3'>Your Cart ( {cartValues} items )</p>
               </div>
 
               {
                 data.map((value, index) => (
-                  <div key={index} className='md:w-[90%] max-md:hidden w-full shadow-[0px_-1px_14px_0px_rgba(0,_0,_0,_0.1)] border-b-1 border-black/30 p-3 flex'>
+                  <div key={index} className='md:w-[90%] max-md:hidden w-full shadow-[0px_-1px_14px_0px_rgba(0,_0,_0,_0.1)] border-b-1 border-black/30 px-3 flex'>
                     <div className='md:w-[18%] w-[16%] flex justify-center items-center'>
                       <Image src={getNonFirstImage(value.images)} alt='productimage' width={100} height={100} className='w-16 h-16 md:w-20 md:h-20 rounded-sm' />
                     </div>
@@ -195,9 +195,9 @@ function Cartpage() {
 
               {
                 data.map((value, index) => (
-                  <div key={value._id + '-' + value.quantity} className='md:hidden w-full px-3 shadow-[0px_-1px_14px_0px_rgba(0,_0,_0,_0.1)] mt-3 rounded-lg border-b-1 border-black/30 p-3 flex'>
-                    <div className='flex justify-center items-center w-[30%]'>
-                      <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full rounded-sm' />
+                  <div key={value._id + '-' + value.quantity} className='md:hidden w-full px-3 text-black shadow-[0px_-1px_14px_0px_rgba(0,_0,_0,_0.1)] mt-3 rounded-lg border-b-1 border-black/30 p-3 flex'>
+                    <div className='flex justify-center items-center w-[25%]'>
+                      <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full h-25 rounded-sm' />
                     </div>
                     <div className='flex flex-col pl-3 w-[70%]'>
                       <h1 className='text-[15px] text-black font-sans font-semibold'>{value.name}</h1>
@@ -307,7 +307,7 @@ function Cartpage() {
               </form>
             </div>
           </div> :
-          <div className='w-full px-3 max-md:mt-25 md:h-screen flex flex-col justify-center items-center'>
+          <div className='w-full px-3 max-md:mt-22 md:h-screen flex flex-col justify-center items-center'>
             <Image src='/all/cartempty.png' alt='cartempty' width={300} height={300} />
             <h1 className='text-[25px] text-black font-honeybabe font-extralight'>You're Cart is Empty</h1>
             <Link href='/' className='transition-transform active:scale-95 duration-100 rounded-md hover:bg-teal-500 bg-teal-400 py-2 px-9 text-white font-sans font-semibold mt-2'>Shop Now</Link>
