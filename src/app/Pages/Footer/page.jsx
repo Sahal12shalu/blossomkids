@@ -19,12 +19,13 @@ function Footer() {
                 <div>
                     <h1 className='text-[14px]'>@2025 BlossomKids | All Rights Reserved</h1>
                 </div>
-                <div className='flex max-md:hidden gap-6 text-[16px] text-black/80 font-semibold font-mono'>
+                <div className='flex max-md:hidden gap-4 text-[14px] text-black/80 font-semibold font-mono'>
                     <Link className='transition-transform active:scale-95 duration-100' href='/Additional/About'>About</Link>
                     <Link className='transition-transform active:scale-95 duration-100' href='/Pages/Contact'>Contact</Link>
-                    <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Privacy'>Privacy policy</Link>
+                    <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Privacy'>Privacypolicy</Link>
                     <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Terms'>Terms&Condition</Link>
                     <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Shippingpolicy'>Shipping policy</Link>
+                    <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Cancel-Refund'>Cancel&Refund</Link>
                 </div>
                 <div className='md:hidden flex justify-around items-center text-center py-4 w-[90%] text-[16px] text-black/80 font-semibold font-mono'>
                     <div className='flex flex-col'>
@@ -36,6 +37,7 @@ function Footer() {
                     <div className='flex flex-col'>
                         <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Terms'>Terms&Condition</Link>
                         <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Shippingpolicy'>Shipping policy</Link>
+                        <Link className='transition-transform active:scale-95 duration-100' href='/Additional/Cancel-Refund'>Cancel&Refund</Link>
                     </div>
                 </div>
                 <div className='flex gap-5'>
