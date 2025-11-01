@@ -30,12 +30,12 @@ function Trackpage() {
       }
         {
                 popUp ?
-                  <div className='fixed inset-0 bg-white px-3 bg-opacity-20 z-50 flex items-center justify-center'>
+                  <div className='fixed inset-0 bg-white px-2 bg-opacity-20 z-50 flex items-center justify-center'>
                     <div className='rounded-lg w-[90%] break-all md:max-w-sm h-57 bg-teal-500'>
                       <div className='bg-teal-800 w-all h-[25%] rounded-t-lg flex items-center pl-3 text-white font-sans font-semibold'>Enter Email</div>
                       <div className='w-full flex flex-col justify-center items-center h-[30%]'>
                         <h1 className='pt-1 text-center font-sans font-semibold
-                         text-[15px] text-white'>Search using the email<br />you’ll be able to see the orders with that email.</h1></div>
+                         text-[14px] text-white'>Search using the email<br />you’ll be able to see the orders with that email.</h1></div>
                       <form onSubmit={Submitemail}>
                       <div className='w-full h-[45%] flex flex-col justify-center items-center gap-4 pb-2 '>
                         <input onChange={(e)=>Setemail(e.target.value)} value={email} type='email' className='bg-white text-black rounded-md w-[60%] h-8 border-1 border-black/50 pl-2' required/>

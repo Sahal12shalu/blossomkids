@@ -18,6 +18,7 @@ function Cartpage() {
   const [grandtotal, Setgrandtotal] = useState('')
   const { cartValue, SetcartValue } = useCart();
   const [buttonspin, Setbuttonspin] = useState(false)
+  const [Popup,Setpopup] = useState(false)
   const Router = useRouter()
   const [formData, SetformData] = useState({
     fullname: '', email: '', city: '', postalcode: '', address: '', payment: '', phonenumber: ''
@@ -33,18 +34,18 @@ function Cartpage() {
     Setbuttonspin(true)
     try {
       if (formData.payment === 'COD') {
-       const res=await axios.post('/api/checkout', finalFormData, {
+        const res = await axios.post('/api/checkout', finalFormData, {
           headers: {
             'Content-Type': 'application/json',
           },
         })
-          if (res.data.message === 'success') {
-             setTimeout(async() => {
+        if (res.data.message === 'success') {
+          setTimeout(async () => {
             SetcartValue(0)
-            const id =await res.data.shippingId
+            const id = await res.data.shippingId
             Router.push(`/Cart/successpage/${id}`)
-             },1000)
-          }
+          }, 1000)
+        }
       } else {
 
         const { data: order } = await axios.post('/api/payment', {
@@ -62,13 +63,17 @@ function Cartpage() {
               headers: {
                 'Content-Type': 'application/json',
               }
-            }).then(async(res)=>{
+            }).then(async (res) => {
               if (res.data.message === 'success') {
                 SetcartValue(0)
-            const id =await res.data.shippingId
-            Router.push(`/Cart/successpage/${id}`)
-          }
-          })
+                Setpopup(true)
+                setTimeout(async () => {
+                  const id = await res.data.shippingId
+                  Router.push(`/Cart/successpage/${id}`)
+                  Setpopup(false)
+                })
+              }
+            })
           },
           prefill: {
             name: formData.fullname,
@@ -82,7 +87,7 @@ function Cartpage() {
         const rzp = new window.Razorpay(options);
         rzp.open();
 
-        
+
         rzp.on('payment.failed', function (response) {
           alert('payment failed')
         })
@@ -157,6 +162,11 @@ function Cartpage() {
   return (
     <div className='bg-white min-h-screen'>
       <Navbar />
+      {Popup && (
+        <div className='fixed inset-0 bg-black/10 bg-opacity-20 z-50 flex items-center justify-center'>
+          <div className='w-8 h-8 border-4 border-black border-t-transparent rounded-full animate-spin'></div>
+        </div>
+      )}
       {
         data.length > 0 ?
 

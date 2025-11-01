@@ -10,7 +10,7 @@ export async function POST(req, res) {
     }
 
     let cart = await CartModel.findOne({ deviceId: userId });
-    const grandtotal = cart.grandtotal
+    const grandtotal = cart.grandtotal + 100
 
     const razorpay = new Razorpay({
         key_id: process.env.RAZORPAY_KEY_ID,
