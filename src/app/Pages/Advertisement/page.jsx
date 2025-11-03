@@ -60,7 +60,7 @@ export default function Carousel() {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {offerproduct.map((src, index) => (
           <Image onClick={()=>Productimage(src._id)} key={index} src={src.offerimage} alt={`Slide ${index + 1}`} width={1000} height={600} 
-          className="w-full rounded-lg h-80 md:h-130 flex-shrink-0" />
+          className="w-full rounded-lg h-80 md:h-130 flex-shrink-0 object-cover" />
         ))}
       </div>
 

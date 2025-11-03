@@ -41,27 +41,27 @@ function Homepage() {
         <div className='flex flex-nowrap bg-gray-50 w-[93%] z-100 px-3 md:px-4 inset-0 md:w-[80%] h-full rounded-2xl no-scrollbar shadow-[0px_1px_21px_3px_rgba(0,_0,_0,_0.1)] md:justify-center justify-start items-center overflow-x-scroll max-md:gap-6 md:gap-10'>
           <Link href={`/Category/Categorypage/${'all-products'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/all.jpg' alt='all-products' width={100} height={100} className='object-fill p-1 border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>All</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>All</h1>
           </Link>
           <Link href={`/Category/Categorypage/${'toys'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/toys.jpg' alt='toys' width={100} height={100} className='object-fill p-1 border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>Toys</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>Toys</h1>
           </Link>
           <Link href={`/Category/Categorypage/${'dress'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/dress.jpg' alt='dress' width={100} height={100} className='object-fill border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>Dress</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>Dress</h1>
           </Link>
           <Link href={`/Category/Categorypage/${'books'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/books.jpg' alt='books' width={100} height={100} className='object-fill border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>Books</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>Books</h1>
           </Link>
           <Link href={`/Category/Categorypage/${'bottle'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/bottle.jpg' alt='bottle' width={100} height={100} className='object-fill border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>Bottle</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>Bottle</h1>
           </Link>
           <Link href={`/Category/Categorypage/${'bags'}`} className='flex flex-col justify-center items-center'>
             <Image src='/category/bags.jpg' alt='bags' width={100} height={100} className='object-fill p-1 border-1 border-gray-200 rounded-full h-17 w-17 md:h-20 md:w-20' />
-            <h1 className='text-center font-mono font-semibold tracking-wide w-17'>Bags</h1>
+            <h1 className='text-center font-sans font-semibold tracking-wide w-17'>Bags</h1>
           </Link>
         </div>
       </div>
