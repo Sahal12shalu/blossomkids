@@ -188,7 +188,7 @@ function Productshow() {
 
               {
                 recommended.map((value, index) => (
-                  <Link href={`/Category/Productshow/${value._id}`} key={index} className={`z-997 h-70 md:h-82 shadow-[0px_1px_29px_10px_rgba(0,_0,_0,_0.1)] relative hover:scale-105 transform transition-transform duration-300  rounded-md md:p-3 pb-9 bg-white`}>
+                  <Link href={`/Category/Productshow/${value._id}`} key={index} className={`z-997 w-43 md:w-55 shadow-[0px_1px_29px_10px_rgba(0,_0,_0,_0.1)] relative hover:scale-105 transform transition-transform duration-300  rounded-md md:p-3 pb-5 bg-white`}>
                     <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full max-md:p-1 max-md:border-1 max-md:border-black/30 md:border-b-1 md:border-black/50 h-[60%] max-md:rounded-t-md' />
                     <p className={`text-red-400 ${value.stock === 'stock' ? 'hidden' : 'flex'} right-1 md:right-3 md:mt-1 items-center text-[9px] tracking-wide md:text-[12px] absolute font-semibold`}>No Stock</p>
                     <h1 className='font-sans font-semibold text-[13px] md:text-[15px] pt-3 max-md:px-3'>{value.name}</h1>
