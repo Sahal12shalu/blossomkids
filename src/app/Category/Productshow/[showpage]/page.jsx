@@ -95,7 +95,7 @@ function Productshow() {
       <div className='pt-28 md:pt-32 w-full flex max-md:flex-col md:flex'>
         {
           data.map((value, index) => (
-            <div key={index} className='md:flex w-[100%] px-[10%]'>
+            <div key={index} className='md:flex w-[100%] md:px-[10%]'>
 
               <div className='md:w-[50%] flex flex-col'>
                 <div className='w-full flex justify-center items-center'>
