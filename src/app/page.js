@@ -17,8 +17,8 @@ export default function Home() {
       <Homepage />
       <FocusCardsDemo />
       <Carousel />
-      <Notepage />
       <Products />
+      <Notepage />
       <Review />
       <Whatsapp />
       <Connectus />

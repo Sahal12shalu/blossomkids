@@ -54,16 +54,16 @@ function Products() {
   };
 
   return (
-    <div className='w-full flex flex-col justify-center items-center z-99 relative mb-10 bg-white text-black pb-4' id='Product'>
-      <h1 className='pb-8 font-semibold text-[18px] md:text-[26px] text-black font-mainfont tracking-widest'>Products</h1>
-      <div className='max-w-6xl px-2 md:px-5 flex flex-wrap justify-center items-center gap-3 md:gap-10'>
+    <div className='w-full flex flex-col justify-center items-center z-99 relative mb-10 bg-white text-black' id='Product'>
+      <h1 className='pb-3 pt-7 font-semibold text-[18px] md:text-[26px] text-black font-mainfont tracking-widest'>Products</h1>
+      <div className='max-w-6xl px-2 md:px-5 flex flex-wrap justify-center items-center gap-3 md:gap-6'>
         {
           data.map((value, index) => (
-            <Link href={`/Category/Productshow/${value._id}`} key={index} className={`w-43 md:w-55 shadow-[0px_1px_29px_10px_rgba(0,_0,_0,_0.1)] relative hover:scale-105 transform transition-transform duration-300 rounded-md md:p-3 pb-4 bg-white`}>
-              <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full max-md:p-1.5 rounded-lg md:border-black/50 h-[68%] object-cover' />
+            <Link href={`/Category/Productshow/${value._id}`} key={index} className={`w-43 mt-3 md:w-55 border-x-1 md:p-2 border-b-1 border-black/10 relative hover:scale-105 transform transition-transform duration-300 rounded-md pb-4 bg-white`}>
+              <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full rounded-lg md:border-black/50 h-[68%] object-cover' />
               <p className={`text-red-400 ${value.stock === 'stock' ? 'hidden' : 'flex'} right-1 md:right-3 md:mt-1 items-center text-[9px] tracking-wide md:text-[12px] absolute font-semibold`}>No Stock</p>
               <h1 className='font-sans font-semibold text-[13px] md:text-[15px] pt-2 max-md:px-2'>{value.name}</h1>
-              <h1 className='text-[13px] tracking-wide max-md:px-2'>{value.category}</h1>
+              <h1 className='text-[13px] font-sans tracking-wide max-md:px-2'>{value.category}</h1>
               <p><span className='font-bold text-[14px] md:text-[16px] font-sans max-md:pl-2 max-md:pr-1'>&#8377; {value.lastprize} </span>
                 <span className='line-through text-[12px]'>{value.firstprize ? '₹' + value.firstprize : ''}</span>
                 <span className='pl-1 text-[13px] text-green-700/70 font-semibold'>{value.discount ? value.discount + '%off' : ''}</span></p>
