@@ -59,7 +59,7 @@ function Products() {
       <div className='max-w-6xl px-2 md:px-5 flex flex-wrap justify-center items-center gap-3 md:gap-6'>
         {
           data.map((value, index) => (
-            <Link href={`/Category/Productshow/${value._id}`} key={index} className={`w-43 mt-3 md:w-55 border-x-1 md:p-2 border-b-1 border-black/10 relative hover:scale-105 transform transition-transform duration-300 rounded-md pb-4 bg-white`}>
+            <Link href={`/Category/Productshow/${value._id}`} key={index} className={`w-43 mt-3 md:w-55 border-x-1 md:p-2 border-b-1 border-black/10 relative hover:scale-105 transform transition-transform duration-300 md:pb-4 rounded-md pb-4 bg-white`}>
               <Image src={getNonFirstImage(value.images)} alt='product' width={100} height={100} className='w-full rounded-lg md:border-black/50 h-[68%] object-cover' />
               <p className={`text-red-400 ${value.stock === 'stock' ? 'hidden' : 'flex'} right-1 md:right-3 md:mt-1 items-center text-[9px] tracking-wide md:text-[12px] absolute font-semibold`}>No Stock</p>
               <h1 className='font-sans font-semibold text-[13px] md:text-[15px] pt-2 max-md:px-2'>{value.name}</h1>
